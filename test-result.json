@@ -1,0 +1,443 @@
+[
+  {
+    "description": "  As a user of Google\n  I want to make sure it works proper\n  So that I can use ad hoc tests",
+    "keyword": "Feature",
+    "name": "Test Task",
+    "line": 1,
+    "id": "test-task",
+    "tags": [],
+    "uri": "features\\cucumber.feature",
+    "elements": [
+      {
+        "id": "test-task;add-operation",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Add operation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "there is connection to Google",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6467000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I start with 1",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I add 2",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 282000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I press result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1094000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I see 3 as a result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\step_definition\\step_def.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-task;subtract-operation",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Subtract operation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "there is connection to Google",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5771000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I start with 5",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I subtract 4",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 271000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I press result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1089000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I see 1 as a result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\step_definition\\step_def.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-task;multiply-operation",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Multiply operation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "there is connection to Google",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5783000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I start with 6",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I multiply by 7",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I press result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1108000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I see 42 as a result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\step_definition\\step_def.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-task;divide-operation",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Divide operation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "there is connection to Google",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6034000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I start with 9",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I divide by 3",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I press result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1082000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I see 3 as a result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\step_definition\\step_def.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-task;pointer-check",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Pointer check",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "there is connection to Google",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5752000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I use pointer and 5",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 294000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I multiply by 8",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I press result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1107000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I see 4 as a result",
+            "match": {
+              "location": "features\\step_definition\\step_def.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\step_definition\\step_def.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
