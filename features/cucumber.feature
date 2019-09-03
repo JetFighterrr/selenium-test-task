@@ -31,7 +31,8 @@ Feature: Test Task
     Then I see 3 as a result
 
   Scenario: Pointer check
-    When I use pointer and 5
+    When I start with 0
+    And I use pointer and 5
     And I multiply by 8
     And I press result
     Then I see 4 as a result
