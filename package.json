@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js --format=json > test-result.json",
-    "test-old": "mocha --recursive --timeout 100000 test-new.js"
+    "test": "./node_modules/.bin/cucumber-js --format=json > test-result.json"
   },
   "keywords": [],
   "author": "",
