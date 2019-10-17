@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efd6be9c-0b6e-40e3-aaa0-b9ddf7db7102" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/test-task.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/cucumber.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/features/step_definition/step_def.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-new.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wdio.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definition/step_def.js" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definition/step_def.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-new.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-result.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-result.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QGg86mBYEDlvpuannpp4qZy0ly" />
@@ -65,7 +63,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.test">
+    <configuration name="test-old" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test-old" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,6 +87,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.test-old" />
       </list>
     </recent_temporary>
   </component>
@@ -95,8 +104,21 @@
       <workItem from="1567402186148" duration="1368000" />
       <workItem from="1567438097060" duration="10333000" />
       <workItem from="1567473041136" duration="11478000" />
-      <workItem from="1567489953561" duration="9674000" />
+      <workItem from="1567489953561" duration="10527000" />
+      <workItem from="1568219911771" duration="24000" />
+      <workItem from="1568219987053" duration="22974000" />
+      <workItem from="1569129605861" duration="600000" />
+      <workItem from="1569136973893" duration="602000" />
+      <workItem from="1571281050514" duration="8031000" />
     </task>
+    <task id="LOCAL-00001" summary="[ggl-test]">
+      <created>1567520683236</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567520683236</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,5 +139,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="[ggl-test]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ggl-test]" />
   </component>
 </project>

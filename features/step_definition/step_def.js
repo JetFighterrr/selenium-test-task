@@ -1,73 +1,71 @@
 //This file contains step definitions for the feature file.
+import {After, Given, When, Then} from 'cucumber';
+import { assert } from 'chai';
+let browser;
 
-require('chromedriver');
-let {defineSupportCode} = require('cucumber');
-let {After, Before, Given, When, Then} = require('cucumber');
-const assert = require('assert');
-const {Builder, Key, By, until} = require('selenium-webdriver');
-let driver;
+Given('there is connection to Google',{timeout: 60 * 1000}, function() {
+    browser.url('https://www.google.com/search?q=calculator');
+});
 
-Given('there is connection to Google',{timeout: 60 * 1000}, async function() {
-    driver = await new Builder().forBrowser('chrome').build();
-    await driver.get('https://www.google.com/search?q=calculator');
+When('I start with {int}',{timeout: 60 * 1000}, function (num) {
+    clickOnButton(num.toString());
     });
 
-When('I start with {int}',{timeout: 60 * 1000},async function (num) {
-    await clickOnButton(num.toString());
-    });
-
-When('I use pointer and {int}',{timeout: 60 * 1000},async function (num) {
-    await clickOnButton('.');
-    await clickOnButton(num.toString());
+When('I use pointer and {int}',{timeout: 60 * 1000}, function (num) {
+    clickOnButton('.');
+    clickOnButton(num.toString());
 });
 
 When('I add {int}',{timeout: 60 * 1000},async function (num) {
-    await clickOnButton('+');
-    await clickOnButton(num.toString());
+    clickOnButton('+');
+    clickOnButton(num.toString());
     });
 
 When('I subtract {int}',{timeout: 60 * 1000},async function (num) {
-    await clickOnButton('-');
-    await clickOnButton(num.toString());
+    clickOnButton('-');
+    clickOnButton(num.toString());
     });
 
-When('I multiply by {int}',{timeout: 60 * 1000},async function (num) {
-    await clickOnButton('X');
-    await clickOnButton(num.toString());
+When('I multiply by {int}',{timeout: 60 * 1000},function (num) {
+    clickOnButton('X');
+    clickOnButton(num.toString());
 });
 
-When('I divide by {int}',{timeout: 60 * 1000},async function (num) {
-    await clickOnButton('/');
-    await clickOnButton(num.toString());
+When('I divide by {int}',{timeout: 60 * 1000},function (num) {
+    clickOnButton('/');
+    clickOnButton(num.toString());
 });
 
-When('I press result',{timeout: 60 * 1000},async function () {
-    await clickOnButton('=');
+When('I press result',{timeout: 60 * 1000}, function () {
+    clickOnButton('=');
     //waiting for a result of operation
-    await driver.sleep(1000);
+    browser.pause(1000);
     });
 
-Then('I see {int} as a result',{timeout: 60 * 1000}, async function (num) {
+Then('I see {int} as a result',{timeout: 60 * 1000}, function (num) {
     //I find result cell and later make assertion
-    let title = await driver.findElement(By.xpath('//*[@id="cwos"]')).getText();
+    let calcResult = $('#cwos');
     let referenceValue = num.toString();
-    assert.ok( title.toString() === referenceValue, 'Error: result of operation is expected to be equal to' + referenceValue + ', but was: ' + title.toString());
+    assert.equal(
+        calcResult.getText().toString(),
+        referenceValue,
+        'Error: result of operation is expected to be equal to' + referenceValue + ', but was: ' + calcResult.toString());
     });
 
 After(async function () {
-    return await (driver && driver.quit());
+    browser.closeWindow();
     });
 
-async function clickOnButton(str){
+function clickOnButton(str){
     //find button by XPath
-    let button = await driver.findElement(By.xpath(parseStringToXpath(str)));
+    let button = $(parseStringToXpath(str));
     //click on button
-    await button.click();
+    button.click();
 }
 
 function parseStringToXpath(str){
     //creating XPath String here
-    let result ='/html/body/div[8]/div[3]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/';
+    let result ='//body/div[8]/div[3]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/';
     switch(str){
         case '0':result += 'tr[5]/td[1]';
             break;
